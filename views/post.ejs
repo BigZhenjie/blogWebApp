@@ -1,0 +1,16 @@
+<%- include("partials/header.ejs") %>
+
+
+<% console.log(locals) %>
+<% if(locals.post.title){ %>
+    <h1>
+        <%= post.title %>
+    </h1>
+
+    <p>
+        <%= post.content %>
+    </p>
+<% }else{ %>
+    <h1>404 - no such post :&lt</h1>
+<% } %>
+<%- include("partials/footer.ejs") %>
